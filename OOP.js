@@ -8,4 +8,13 @@ const book1 = {
   }
 }
 
-console.log(book1.title)
+const book2 = {
+  title: 'Book Two',
+  author: 'John Doe',
+  year: '2016',
+  getSummary: function() {
+    return `${this.title} was written ${this.author} in the year of ${this.year};`
+  }
+}
+
+console.log(book2.getSummary())
