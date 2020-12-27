@@ -24,9 +24,13 @@ function Textbook(title,author,year,edition,publisher) {
   this.publisher = publisher;
 }
 
+//inherit prototype
+Magazine.prototype = Object.create(Book.prototype);
+Textbook.prototype = Object.create(Book.prototype);
+
 const mag1 = new Magazine('Big booty', 'john doe', 2012, 'Dec')
 const text1 = new Textbook('Words','Words boy', 2020, '5th', 'Penguin')
 
 console.log(mag1)
 
-console.log(text1)
+console.log(text1.getSummary())
