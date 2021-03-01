@@ -4,11 +4,24 @@ class BankAccount {
     this.amount = amount;
   }
 
+
+
   deposit(pin,amount) {
+    if(pin == this.pin) {
+      return this.amount += amount;
+    }
+
+    return "You cant steal from us!"
 
   }
 
   withdraw (pin,amount) {
+    if(pin == this.pin) {
+      return this.amount -= amount;
+    }
+
+    return "You cant steal from us!"
+
 
   }
 
@@ -35,3 +48,4 @@ const bank1 = new BankAccount(123, 4598674);
 console.log(bank1.getBalance(123));
 console.log(bank1.changePin(123,234))
 console.log(bank1.getBalance(234));
+console.log(bank1.deposit(234,1));
