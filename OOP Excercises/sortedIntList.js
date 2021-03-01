@@ -17,6 +17,10 @@ class SortedIntList extends IntList {
   constructor() {
     super(list,listCount);
   }
+
+  addItem(num) {
+    // it has to put it in sorted
+  }
 }
 
 const int1 = new IntList();
