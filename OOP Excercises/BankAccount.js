@@ -20,6 +20,11 @@ class BankAccount {
   }
 
   changePin (oldPin,newPin) {
+    if(oldPin == this.pin) {
+      this.pin = newPin
+      return "We have updated your pin"
+    }
+    return "You have entered a non existent pin calling yo mama"
 
   }
 
@@ -27,4 +32,6 @@ class BankAccount {
 
 const bank1 = new BankAccount(123, 4598674);
 
-console.log(bank1.getBalance(123))
+console.log(bank1.getBalance(123));
+console.log(bank1.changePin(123,234))
+console.log(bank1.getBalance(234));
