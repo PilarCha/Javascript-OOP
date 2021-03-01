@@ -27,4 +27,4 @@ const book2 = new Book('book2', 'boobyman', 2016);
 
 console.log(book2);
 book2.revise(2020);
-console.log(book2)
+console.log(book2);
