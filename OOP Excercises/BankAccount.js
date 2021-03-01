@@ -24,3 +24,7 @@ class BankAccount {
   }
 
 }
+
+const bank1 = new BankAccount(123, 4598674);
+
+console.log(bank1.getBalance(123))
