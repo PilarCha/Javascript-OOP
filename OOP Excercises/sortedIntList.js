@@ -14,16 +14,18 @@ class IntList {
 }
 
 class SortedIntList extends IntList {
-  constructor() {
-    super(list,listCount);
-  }
 
   addItem(num) {
     // it has to put it in sorted
+    this.list.push(num);
+    this.listCount++;
+    this.list.sort();
+    return this.list;
+
   }
 }
 
-const int1 = new IntList();
+const int1 = new SortedIntList();
 
 console.log(int1.addItem(4));
 console.log(int1.addItem(3));
